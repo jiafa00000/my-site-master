@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}
+    查询结果
+{% endblock %}
+{% block path %}
+    <a href = "{% url 'home'%}">当前位置&nbsp;:&nbsp;首页&nbsp;</a>»&nbsp;关于我
+{% endblock %}
+{% block content %}
+	
+<div class="archive">
+     <div class="archive">
+         <p>基金代码：{{a}}</p>
+         <p>基金净值：{{b}}</p>
+         <p>最后更新时间：{{c}}</p>
+         
+         
+       
+
+
+     </div>
+</div>
+
+
+         
+
+	
+{% endblock %}
+
+{% block side %}
+	 {% include "blog/_side.html" %}
+{% endblock %}
+
+

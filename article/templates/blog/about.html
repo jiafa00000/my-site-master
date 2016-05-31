@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}
+    关于我
+{% endblock %}
+{% block path %}
+    <a href = "{% url 'home'%}">当前位置&nbsp;:&nbsp;首页&nbsp;</a>»&nbsp;关于我
+{% endblock %}
+{% block content %}
+	
+
+	 <div class="archive">
+             <div id="archives">
+        <h3>
+         关于本站
+        </h3>
+       
+         <blockquote>
+               &nbsp;&nbsp;&nbsp;这是一个无名小站
+               </br>
+               </br>
+               
+               欢迎使用顶端工具页
+
+        </blockquote>
+        </br>
+       
+        <h3>
+        关于我
+        </h3>
+    
+
+        <blockquote>
+               &nbsp;&nbsp;&nbsp;个人简介
+               </br></br>个人简介2
+        </blockquote>
+        </br>
+        <ul>
+              
+                
+               
+        </ul>
+        
+        <h3>联系我
+        </h3>
+        <ul>
+        <li>博客:&nbsp;&nbsp;&nbsp;<a href="https://www.baidu.com">本站</li></a>
+        <li>邮箱:&nbsp;&nbsp;&nbsp;jiafa99999@163.com </li>
+        <li>知乎:&nbsp;&nbsp;&nbsp;<a href="https://www.baidu.com">abc</a></li>
+        </ul>
+<!-- /.blog-post -->
+</div>
+</div>
+
+
+          {% include "blog/_comments.html" %}
+
+	
+{% endblock %}
+
+{% block side %}
+	 {% include "blog/_side.html" %}
+{% endblock %}
+
+
